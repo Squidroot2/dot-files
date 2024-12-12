@@ -30,12 +30,12 @@ update() {
     sudo dnf update --refresh
     flatpak update
     cargo install-update --list --all | grep Yes$ && { printf 'Proceed with update? '; read -r resp && [ "${resp#[yY]}" != "$resp" ] && cargo install-update --all; } 
+    lectio-diei db refresh
 }
 
 adb-run() {
     x devices | grep adb | awk '{print $1}' | xargs -I % zsh -c 'x run --device %'
 }
-
 
 # Add the custom zsh completions directory
 fpath=(~/.zsh-completions $fpath)
