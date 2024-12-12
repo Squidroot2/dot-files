@@ -1,0 +1,7 @@
+[favorites.default]
+git = "https://github.com/squidroot2/cargo-generate-template"
+branch = "main"
+
+[favorites.test]
+git = "https://github.com/squidroot2/cargo-generate-template"
+branch = "test"
