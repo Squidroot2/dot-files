@@ -1,5 +1,7 @@
-vim.opt.background = "dark"
+require("config.lazy")
+
 vim.opt.number = true
+vim.opt.background = "dark"
 vim.opt.cursorline = true
 vim.opt.smartindent = true
 vim.opt.ignorecase = true
@@ -10,7 +12,10 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.termguicolors = true
 
+-- p will paste clipboard
+vim.opt.clipboard = "unnamedplus"
+
 vim.opt.list = true
-vim.opt.listchars = {space = '·', tab = '»·' }
-vim.cmd('highlight Whitespace guifg=#4a7a4a')
+-- vim.opt.listchars = {space = '·', tab = '»·' }
+-- vim.cmd('highlight Whitespace guifg=#4a7a4a')
 
