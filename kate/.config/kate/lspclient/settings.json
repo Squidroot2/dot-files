@@ -1,0 +1,38 @@
+{
+    "servers": {
+        "markdown": {
+            "command": [
+                "vscode-markdown-language-server",
+                "--stdio"
+            ],
+            "rootIndicatorFileNames": [],
+            "url": "https://github.com/microsoft/vscode-markdown-languageservice",
+            "highlightingModeRegex": "^Markdown$"
+        },
+        "rust": {
+            "initializationOptions": {
+                "files": {
+                    "excludeDirs": [
+                        "Sources/cargo-generate-template"
+                    ]
+                },
+                "check": {
+                    "invocationLocation": "/home/hayden/Sources"
+                },
+                "procMacro": {
+                    "enable": true
+                }
+            }
+        },
+        "Slint": {
+            "path": [
+                "%{ENV:HOME}/.cargo/bin",
+                "%{ENV:USERPROFILE}/.cargo/bin"
+            ],
+            "command": [
+                "slint-lsp"
+            ],
+            "highlightingModeRegex": "Slint"
+        }
+    }
+}
