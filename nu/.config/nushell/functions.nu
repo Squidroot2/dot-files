@@ -34,6 +34,9 @@ def update [] {
     print "-------------------"
     lectio-diei db refresh
 }
+def restart-plasma [] {
+    systemctl --user restart plasma-plasmashell.service
+}
 # Backup of cd
 alias core-cd = cd
 alias cd = z
