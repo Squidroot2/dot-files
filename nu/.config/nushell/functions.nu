@@ -33,6 +33,11 @@ def update [] {
     print "LECTIO DIEI REFRESH"
     print "-------------------"
     lectio-diei db refresh
+
+    print ""
+    print "NPM UPDATE"
+    print "----------"
+    sudo npm update -g
 }
 def restart-plasma [] {
     systemctl --user restart plasma-plasmashell.service
@@ -40,5 +45,4 @@ def restart-plasma [] {
 # Backup of cd
 alias core-cd = cd
 alias cd = z
-
-
+alias vim = nvim
