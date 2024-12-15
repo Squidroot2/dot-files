@@ -178,7 +178,8 @@ SetEditor=false
 
 [MainWindow]
 2560x1440 screen: Height=1367
-2560x1440 screen: Width=1340
+2560x1440 screen: Width=1405
+2560x1440 screen: Window-Maximized=true
 ToolBarsMovable=Disabled
 
 [Shortcut Schemes]

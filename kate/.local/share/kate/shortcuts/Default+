@@ -1,0 +1,25 @@
+<gui name="kate" version="1">
+  <ActionProperties>
+    <Action name="open_kcommand_bar" shortcut="Ctrl+Shift+R"/>
+    <Action name="options_show_menubar" shortcut="Ctrl+M"/>
+    <Action name="view_prev_tab" shortcut="Alt+Left; Back"/>
+    <Action name="view_next_tab" shortcut="Alt+Right; Forward"/>
+    <Action name="view_quick_open" shortcut="Ctrl+Alt+O"/>
+    <Action name="view_split_vert" shortcut="Ctrl+Shift+L"/>
+    <Action name="view_split_horiz" shortcut="Ctrl+Shift+T"/>
+    <Action name="go_prev_split_view" shortcut="Shift+F8"/>
+    <Action name="viewspace_focus_nav_bar" shortcut="Ctrl+Shift+."/>
+    <Action name="file_new" shortcut="Ctrl+N"/>
+    <Action name="file_open" shortcut="Ctrl+O"/>
+    <Action name="file_save_all" shortcut="Ctrl+L"/>
+    <Action name="file_close" shortcut="Ctrl+W; Ctrl+Esc"/>
+    <Action name="file_quit" shortcut="Ctrl+Q"/>
+    <Action name="view_new_view" shortcut="Ctrl+Shift+N"/>
+    <Action name="fullscreen" shortcut="F11"/>
+    <Action name="options_configure_keybinding" shortcut="Ctrl+Alt+,"/>
+    <Action name="options_configure" shortcut="Ctrl+Shift+,"/>
+    <Action name="view_history_back" shortcut="Ctrl+1"/>
+    <Action name="view_history_forward" shortcut="Ctrl+Shift+1"/>
+    <Action name="help_whats_this" shortcut="Shift+F1"/>
+  </ActionProperties>
+</gui>
