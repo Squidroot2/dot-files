@@ -18,6 +18,8 @@ return {
             local lsp = require("lspconfig")
             lsp.lua_ls.setup {}
             lsp.rust_analyzer.setup {}
+            vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Show Diagnostic (Error) Details" })
+            vim.keymap.set('n', '<leader>lr', vim.lsp.buf.references, { desc = "Find LSP References" })
 
             -- On connection to lsp server, set up format on write when the current buffer is written
             vim.api.nvim_create_autocmd('LspAttach', {

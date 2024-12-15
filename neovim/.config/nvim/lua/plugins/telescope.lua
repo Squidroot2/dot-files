@@ -8,6 +8,9 @@ return {
                 pickers = {
                     find_files = {
                         theme = "ivy",
+                    },
+                    live_grep = {
+                        theme = "ivy",
                     }
                 },
                 extensions = {
@@ -17,9 +20,11 @@ return {
             require('telescope').load_extension('fzf')
 
             -- Find Help
-            vim.keymap.set("n", "<space>fh", require('telescope.builtin').help_tags)
+            vim.keymap.set("n", "<space>fh", require('telescope.builtin').help_tags, { desc = "Fuzzy Find Help" })
             -- Find Files
-            vim.keymap.set("n", "<space>ff", require('telescope.builtin').find_files)
+            vim.keymap.set("n", "<space>ff", require('telescope.builtin').find_files, { desc = "Fuzzy Find File" })
+            vim.keymap.set("n", "<leader>fs", require('telescope.builtin').live_grep,
+                { desc = "Find String (Live Grep} )" })
         end
     }
 }
