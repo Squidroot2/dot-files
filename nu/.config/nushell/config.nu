@@ -904,4 +904,5 @@ source 'paths.nu'
 source 'welcome.nu'
 
 # Completions
-
+source 'git-completions.nu'
+source 'cargo-completions.nu'
