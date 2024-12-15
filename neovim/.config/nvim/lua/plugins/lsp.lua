@@ -18,6 +18,7 @@ return {
             local lsp = require("lspconfig")
             lsp.lua_ls.setup {}
             lsp.rust_analyzer.setup {}
+            lsp.nushell.setup {}
             vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Show Diagnostic (Error) Details" })
             vim.keymap.set('n', '<leader>lr', vim.lsp.buf.references, { desc = "Find LSP References" })
 
