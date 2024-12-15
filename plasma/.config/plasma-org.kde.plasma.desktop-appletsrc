@@ -599,7 +599,7 @@ popupHeight=400
 popupWidth=560
 
 [Containments][78][Applets][132][Configuration][Appearance]
-chartFace=org.kde.ksysguard.barchart
+chartFace=org.kde.ksysguard.linechart
 title=GPU Usage
 
 [Containments][78][Applets][132][Configuration][ConfigDialog]
@@ -624,7 +624,7 @@ popupHeight=400
 popupWidth=560
 
 [Containments][78][Applets][86][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
+chartFace=org.kde.ksysguard.barchart
 title=Memory Usage
 
 [Containments][78][Applets][86][Configuration][ConfigDialog]
@@ -701,7 +701,7 @@ popupHeight=400
 popupWidth=560
 
 [Containments][78][Applets][92][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
+chartFace=org.kde.ksysguard.barchart
 title=GPU Memory
 
 [Containments][78][Applets][92][Configuration][ConfigDialog]
@@ -715,7 +715,10 @@ gpu/gpu1/usedVram=0,255,0
 [Containments][78][Applets][92][Configuration][Sensors]
 highPrioritySensorIds=["gpu/gpu1/usedVram"]
 lowPrioritySensorIds=["gpu/gpu1/totalVram"]
-totalSensors=["gpu/gpu1/usedVram"]
+totalSensors=[]
+
+[Containments][78][Applets][92][Configuration][org.kde.ksysguard.piechart][General]
+showLegend=false
 
 [Containments][78][Applets][94]
 immutability=1
@@ -835,7 +838,7 @@ DialogHeight=84
 DialogWidth=2560
 
 [Containments][78][General]
-AppletOrder=91;88;94;95;92;132;86
+AppletOrder=91;88;94;95;132;92;86
 
 [Containments][8]
 activityId=
