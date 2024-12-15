@@ -1,0 +1,29 @@
+2560x1440 screen: Window-Maximized=true
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Nushell.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+0x0 screen: Height=8164
+0x0 screen: Width=4096
+0x0 screen: Window-Maximized=true
+2560x1440 screen: Height=902
+2560x1440 screen: Width=1280
+2560x1440 screen: XPosition=694
+2560x1440 screen: YPosition=458
+DP-0=DP-0
+RestorePositionForNextInstance=false
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=TextOnly
+
+[Toolbar mainToolBar]
+ToolButtonStyle=TextOnly
+
+[UiSettings]
+ColorScheme=
