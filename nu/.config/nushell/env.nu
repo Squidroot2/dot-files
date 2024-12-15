@@ -76,13 +76,14 @@ $env.ENV_CONVERSIONS = {
 
 let $nu_scripts_dir = $nu.default-config-dir | path join 'scripts'
 let $nu_init_dir = $nu.default-config-dir | path join  'init'
+# default home for nushell completions
 let $nu_completions_dir = $nu.data-dir | path join 'completions'
 # Directories to search for scripts when calling source or use
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
-    $nu_scripts_dir # add <nushell-config-dir>/scripts
+    $nu_scripts_dir 
     $nu_init_dir
-    $nu_completions_dir # default home for nushell completions
+    $nu_completions_dir 
 ]
 
 # Directories to search for plugin binaries when calling register
