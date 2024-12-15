@@ -73,10 +73,12 @@ $env.ENV_CONVERSIONS = {
     }
 }
 
+
+let $nu_scripts_dir = $nu.default-config-dir | path join 'scripts'
 # Directories to search for scripts when calling source or use
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
-    ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
+    $nu_scripts_dir # add <nushell-config-dir>/scripts
     ($nu.data-dir | path join 'completions') # default home for nushell completions
 ]
 
@@ -99,5 +101,5 @@ path add ($env.HOME | path join ".local" "bin")
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-zoxide init nushell | save -f ($nu.default-config-dir | path join 'zoxide.nu')
-starship init nu | save -f ($nu.default-config-dir | path join 'starship.nu')
+zoxide init nushell | save -f ($nu_scripts_dir | path join 'zoxide.nu')
+starship init nu | save -f ($nu_scripts_dir | path join 'starship.nu')

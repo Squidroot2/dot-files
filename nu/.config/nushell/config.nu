@@ -897,8 +897,11 @@ $env.config = {
         }
     ]
 }
-source ($nu.default-config-dir | path join 'zoxide.nu')
-source ($nu.default-config-dir | path join 'starship.nu')
-source ($nu.default-config-dir | path join 'functions.nu')
-source ($nu.default-config-dir | path join 'paths.nu')
-source ($nu.default-config-dir | path join 'welcome.nu')
+source 'zoxide.nu'
+source 'starship.nu'
+source 'functions.nu'
+source 'paths.nu'
+source 'welcome.nu'
+
+# Completions
+
