@@ -42,6 +42,17 @@ def update [] {
 def restart-plasma [] {
     systemctl --user restart plasma-plasmashell.service
 }
+def --env yazi [...args] {
+    # Random file name to store new cwd
+    let tmp = (mktemp -t "yazi-cmd.XXXXX")
+    ^yazi ...$args --cwd-file $tmp
+    let cwd = (open $tmp)
+    if $cwd != "" and $cwd != $env.PWD {
+        cd $cwd
+    }
+    rm -fp $tmp
+}
+    
 # Backup of cd
 alias core-cd = cd
 alias cd = z
